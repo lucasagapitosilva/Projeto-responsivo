@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.limite-area {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*TOPO*/
+
+header {
+    background-color: #00cad1;
+    height: 80px;
+    width: 100%;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo img {
+    width: 150px;
+}
+
+.links-topo {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.links-topo a:hover {
+    color: #0c6e71;
+}
+
+/*Banner*/
+
+.banner {
+    background-image: url("/img/recepcao.png");
+    height: 860px;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.titulo p{
+    position: relative;
+    top: 250px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+/*PRIMEIRA SECTION*/
+
+.secao-sobre h2 {
+    font-size: 28px;
+    margin: 16px auto;
+    text-align: center;
+    color: #464646
+}
+
+.secao-sobre p {
+    margin: 0 auto;
+    font-size: 18px;
+    max-width: 650px;
+    text-align: center;
+    color: #464646;
+}
+
+.lista {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista img {
+    height: 300px;
+}
+
+.lista h3 {
+    margin-bottom: 14px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #464646;
+    font-weight: normal;
+}
+
+li {
+    margin-left: 40px;
+    color: #464646;
+    font-size: 18px;
+}
+
+/*SEGUNDA SECTION*/
+
+.secao-funcoes h3 {
+    font-size: 26px;
+    margin: 16px auto;
+    text-align: center;
+    color: #464646
+}
+
+.secao-funcoes p {
+    margin: 0 auto;
+    font-size: 18px;
+    max-width: 650px;
+    text-align: center;
+    color: #464646;
+}
+
+.categoria img {
+    width: calc(100% - 0%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    margin: 20px 10px;
+    border-radius: 5px;
+    box-shadow: #464646 2px 2px 10px, #464646 -2px -2px 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 18px;
+    color: #454545;
+}
+
+.ver-horarios {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    background-color:#00cad1;
+    padding: 6px;
+    border-radius: 5px;
+    max-width: 150px;
+}
+
+.ver-horarios a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*TERCEIRA SECTION*/
+
+.secao-contato h3 {
+    font-size: 26px;
+    margin: 16px auto;
+    text-align: center;
+    color: #464646
+}
+
+.secao-contato p {
+    margin: 0 auto;
+    font-size: 18px;
+    max-width: 680px;
+    text-align: center;
+    color: #464646;
+    line-height: 34px;
+}
+
+iframe {
+    margin: 20px auto;
+    width: 100%;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color:#0c6e71;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer p {
+    line-height: 32px;
+    font-size: 18px;
+    color:#fff;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 425px) {
+
+    .limite-area {
+        margin: 0 10px;
+    }
+
+    header{
+        height: 150px;
+    }
+    .topo {
+        flex-direction: column;
+    }
+
+    .links-topo {
+        border-top: #02b8be 1px solid;
+    }
+
+    .topo a {
+        padding: 0 20px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .titulo {
+        top: 60px;
+        font-size: 28px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .lista img {
+        display: none;
+    }
+
+    .categoria {
+        flex-direction: column;
+    }
+
+    .categoria img {
+        width: calc(100% / 8px);
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .titulo {
+        top: 80px;
+        font-size: 40px;
+        left: 10px;
+    }
+
+    .lista img {
+        display: none;
+    }
+
+    .categoria {
+        flex-wrap: wrap;
+    }
+    
+    .categoria img {
+        width: 350px;
+        height: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .titulo {
+        top: 160px;
+        left: 10px;
+        font-size: 40px;
+    }
+}
